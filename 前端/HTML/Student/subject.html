@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../popper.js-1.12.7/dist/umd/popper.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+		
+
+	</script>
+
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		body{
+			padding-top: 0px;
+			background:#FFF;
+		}
+		.container-fluid{
+			background:#C7D69B;
+		}
+		.title{
+			font-size: 22px;
+			color: #FFFFFF;
+		}
+		.now{
+			color: #000000;
+			
+		}
+		.topics{
+			background:#DAE5BB;
+			padding-left: 10%;
+		}
+		.topicsList{
+			color: #000000;
+			margin: 5px 20px 5px 10px;
+			font-size: 20px;
+		}
+		.list{
+			background:#FFFFFF;
+		}
+		.search{
+			padding-left: 10%;
+		}
+		.searchList{
+			font-size: 18px;
+			margin: 20px;
+		}
+		.searchCheck{
+			font-size: 18px;
+			margin: 15px;
+		}
+		.head{
+			margin-left: 10%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-size: 18px;
+			background:#FFFFFF;
+		}
+		.formBody{
+			background:#FFFFFF;
+			padding-left: 10%;
+			padding-right: 10%;
+			/*height: 800px;*/
+		}
+		.bt{
+			background:#F0F0F0;
+		}
+		.option{
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class='container-fluid' >
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<a class="btn btn-default title" href="?top=" role="button">出题系统</a>
+			<a class="btn btn-default title" href="?top=Home" role="button">首页</a>
+			<a class="btn btn-default title now" href="?top=Subject" role="button">题目</a>
+			<a class="btn btn-default title" href="?top=Query" role="button">查询</a>
+			<a class="btn btn-default title" href="?top=Test" role="button">考试</a>
+			<span>
+				<a class="btn btn-default now" href="?top=Message" role="button">SAAAA</a>
+				<a class="btn btn-default now" href="?top=Out" role="button">注销</a>
+			</span>
+		</div>
+	</nav>
+	</div>
+	<div class="panel panel-default">
+		<!-- 题目类型 -->
+		<div class="panel-heading">
+			<ul class="nav nav-tabs topics">
+				<li><a class="btn btn-default topicsList" href="?type=S" role="button">单选题</a></li>
+				<li><a class="btn btn-default topicsList" href="?type=C" role="button">填空题</a></li>
+				<li><a class="btn btn-default topicsList" href="?type=CP" role="button">改错题</a></li>
+				<li><a class="btn btn-default topicsList" href="?type=PQ" role="button">编程题</a></li>
+			</ul>
+		</div>
+		<div class="panel-body list" id="app">
+			<!-- 搜索栏 -->
+			<div class="panel-heading">
+				<ul class="nav nav-tabs search">
+					<li class="searchList"><span>知识点</span></li>
+					<li class="searchCheck">
+
+						<div class="input-group">
+							<form action="#">
+							
+							<input type="text" class="form-control" aria-label="..." v-model="keywords">
+							</form>
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-default dropdown-toggle bt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">知识点<span class="caret"></span></button>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li class="option" v-for="(value, index) in ledgeList" @click.prevent="add">{{value}}</li>
+									
+								</ul>
+							</div>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			
+			<div class="panel-body formBody" >	
+				<table class="table table-hover table-striped">
+				<!-- 题目列表头 -->
+				<tr>
+					<th class="head">编号</th>
+					<th class="head">标题</th>
+					<th class="head">知识点</th>
+					<th class="text-right head">正确量</th>
+					<th class="text-right head">提交量</th>
+				</tr>
+				<!-- 题目列表 -->
+				
+				<tr class="table-hover" v-for="(value, index) in search()">
+					<td>{{value.id}}</td>
+					<td>{{value.name}}</td>
+					<td>{{value.knowledge}}</td>
+					<td class="text-right">{{value.ac}}</td>
+					<td class="text-right">{{value.Total}}</td>
+				</tr>
+
+
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="../js/vue.js"></script>
+	<script>
+		let vm = new Vue({
+			el: '#app',
+			data: {
+				ledgeList:[
+					"数组",
+					"函数",
+					"数据结构",
+					"所有"
+				],
+				list: [
+					{
+						id: 1,
+						name: "lnj",
+						knowledge: "数组",
+						ac:'22%',
+						Total:20
+						
+					},
+					{
+						id: 2,
+						name: "zq",
+						knowledge: "函数",
+						ac:'20%',
+						Total:20
+					},
+					{
+						id: 3,
+						name: "dsfs",
+						knowledge: "函数",
+						ac:'2%',
+						Total:20
+					}
+				],
+				keywords: ""
+			},
+			
+			methods: {
+				add: function (e) {
+					if(e.target.innerText!="所有"){
+						this.keywords=e.target.innerText;
+					}else{
+						this.keywords="";
+					}
+					//this.newPerson = {id:"", name:"", score:"", date:Date.now()}
+				},
+				search: function () {
+					var self = this;
+					var flag = true;
+					// 1.根据keywords从原始数据中查询满足条件的结果
+					var newArray = this.list.filter(function (item) {
+						if(item.knowledge.includes(self.keywords)){
+							return true;
+						}
+					});
+					// 2.修改原始数据
+					// this.list = newArray;
+					
+					return newArray;
+				}
+			}
+		});
+	</script>
+</body>
+</html>

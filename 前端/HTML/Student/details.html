@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../popper.js-1.12.7/dist/umd/popper.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body{
+			padding-top: 0px;
+			background:#C7D69B;
+		}		
+		.title{
+			font-size: 22px;
+			color: #FFFFFF;
+		}
+		.now{
+			color: #000000;
+		}
+		.head{
+			margin: 10px;
+		}
+		.topics{
+			background:#DAE5BB;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		.top{
+			font-size: 20px;
+			background:#FFFFFF;
+			padding-left: 10%;
+			height: 50px;
+			display: flex;
+    		align-items:center;
+		}
+		.formBody{
+			background:#FFFFFF;
+			padding-left: 10%;
+			height: 800px;
+		}
+		.topType{
+			color: #000000;
+			font-size: 18px;
+			text-align: left;
+		}
+		.topId{
+			color: #000000;
+			font-size: 18px;
+			text-align: center;
+		}
+		.nextTop{
+			color: #000000;
+			font-size: 18px;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<a class="btn btn-default title" href="?top=" role="button">出题系统</a>
+			<a class="btn btn-default title" href="?top=Home" role="button">首页</a>
+			<a class="btn btn-default title now" href="?top=Subject" role="button">题目</a>
+			<a class="btn btn-default title" href="?top=Query" role="button">查询</a>
+			<a class="btn btn-default title" href="?top=Test" role="button">考试</a>
+			<span>
+				<a class="btn btn-default now" href="?top=Message" role="button">SAAAA</a>
+				<a class="btn btn-default now" href="?top=Out" role="button">注销</a>
+			</span>
+		</div>
+	</nav>
+	<!-- 信息栏 -->
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<ul class="nav nav-tabs topics">
+				<li class="col-sm pull-right text-left head">
+					<a class="btn btn-default topType" href="?head=S" role="button">单选题</a>
+				</li>
+				<li class="col-sm pull-right text-center head">
+					<a class="btn btn-default topId" href="?head=Id" role="button">问题编号</a>
+				</li>
+				<li class="col-sm pull-right text-right head">
+					<a class="btn btn-default nextTop" href="?head=Next" role="button">下一题</a>
+				</li>
+			</ul>
+		</div>
+		<div class="panel-body list">
+			<div class="panel-heading top">问题描述</div>
+			<div class="panel-body formBody">
+
+				<!-- 题目 -->
+
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
