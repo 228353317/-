@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OJPro:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/OJPro_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="OJPro/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OJPro" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
