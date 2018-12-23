@@ -9,6 +9,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/OJPro$HibernateTest_test_0j.ic" NAME="HibernateTest.test_0j Coverage Results" MODIFIED="1545564670916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.OJ.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OJPro$HiberbateTest1_Test3.ic" NAME="HiberbateTest1.Test3 Coverage Results" MODIFIED="1545564247295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.OJ.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OJPro$HibernateTest_test2.ic" NAME="HibernateTest.test2 Coverage Results" MODIFIED="1545562235757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.OJ.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OJPro$HibernateTest_test3.ic" NAME="HibernateTest.test3 Coverage Results" MODIFIED="1545563939822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.OJ.test.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="300" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -27,38 +44,41 @@
     <session id="-1085510111">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="27" />
+          <entry key="java" value="30" />
           <entry key="jsp" value="1" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="27" />
+          <entry key="JAVA" value="30" />
           <entry key="JSP" value="1" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="369" />
+          <entry key="java" value="457" />
           <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="369" />
+          <entry key="JAVA" value="457" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="26" />
         </counts>
@@ -67,11 +87,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/OJ/test/HibernateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1190">
-              <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+            <state relative-caret-position="714">
+              <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,15 +100,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/OJ/test/HiberbateTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="170">
+              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/OJ/domain/solution.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
@@ -98,17 +118,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/OJ/domain/solution.java">
+        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2516">
-              <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="850">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -128,10 +141,10 @@
         <option value="$PROJECT_DIR$/src/com/OJ/domain/Customer.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/OJ/domain/solution.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/OJ/domain/Customer.java" />
-        <option value="$PROJECT_DIR$/src/com/OJ/test/HiberbateTest1.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/com/OJ/domain/solution.java" />
         <option value="$PROJECT_DIR$/src/com/OJ/test/HibernateTest.java" />
+        <option value="$PROJECT_DIR$/src/com/OJ/test/HiberbateTest1.java" />
       </list>
     </option>
   </component>
@@ -157,8 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,13 +214,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544448112408" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545564691666" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -237,7 +250,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HibernateTest.test2">
+  <component name="RunManager" selected="JUnit.HibernateTest.test_0j">
+    <configuration name="HiberbateTest1.Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OJPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.OJ.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.OJ.test" />
+      <option name="MAIN_CLASS_NAME" value="com.OJ.test.HiberbateTest1" />
+      <option name="METHOD_NAME" value="Test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HibernateTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OJPro" />
       <extension name="coverage">
@@ -249,6 +278,22 @@
       <option name="PACKAGE_NAME" value="com.OJ.test" />
       <option name="MAIN_CLASS_NAME" value="com.OJ.test.HibernateTest" />
       <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OJPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.OJ.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.OJ.test" />
+      <option name="MAIN_CLASS_NAME" value="com.OJ.test.HibernateTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -295,11 +340,15 @@
       <item itemvalue="Tomcat Server.Tomcat 7.0.85" />
       <item itemvalue="JUnit.HibernateTest.test_0j" />
       <item itemvalue="JUnit.HibernateTest.test2" />
+      <item itemvalue="JUnit.HiberbateTest1.Test3" />
+      <item itemvalue="JUnit.HibernateTest.test3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HibernateTest.test2" />
         <item itemvalue="JUnit.HibernateTest.test_0j" />
+        <item itemvalue="JUnit.HiberbateTest1.Test3" />
+        <item itemvalue="JUnit.HibernateTest.test3" />
+        <item itemvalue="JUnit.HibernateTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -315,39 +364,52 @@
       <updated>1544353748115</updated>
       <workItem from="1544353753247" duration="7568000" />
       <workItem from="1544446832586" duration="1284000" />
+      <workItem from="1544451323261" duration="784000" />
+      <workItem from="1545559894732" duration="3559000" />
+      <workItem from="1545563909374" duration="712000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HibernateTest_test_0j - 2018.12.09 at 21h 18m 32s.xml">
-      <configuration name="HibernateTest.test_0j" configurationId="JUnit" />
+    <history-entry file="HiberbateTest1_Test3 - 2018.12.23 at 19h 03m 51s.xml">
+      <configuration name="HiberbateTest1.Test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HibernateTest_test_0j - 2018.12.09 at 21h 19m 16s.xml">
-      <configuration name="HibernateTest.test_0j" configurationId="JUnit" />
+    <history-entry file="HiberbateTest1_Test3 - 2018.12.23 at 19h 05m 17s.xml">
+      <configuration name="HiberbateTest1.Test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HibernateTest_test_0j - 2018.12.09 at 21h 22m 02s.xml">
-      <configuration name="HibernateTest.test_0j" configurationId="JUnit" />
+    <history-entry file="HibernateTest_test3 - 2018.12.23 at 19h 07m 56s.xml">
+      <configuration name="HibernateTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HibernateTest_test_0j - 2018.12.09 at 21h 27m 50s.xml">
-      <configuration name="HibernateTest.test_0j" configurationId="JUnit" />
+    <history-entry file="HibernateTest_test3 - 2018.12.23 at 19h 08m 52s.xml">
+      <configuration name="HibernateTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HibernateTest_test_0j - 2018.12.09 at 21h 29m 07s.xml">
-      <configuration name="HibernateTest.test_0j" configurationId="JUnit" />
+    <history-entry file="HibernateTest_test3 - 2018.12.23 at 19h 09m 03s.xml">
+      <configuration name="HibernateTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HibernateTest_test2 - 2018.12.10 at 21h 16m 59s.xml">
-      <configuration name="HibernateTest.test2" configurationId="JUnit" />
+    <history-entry file="HibernateTest_test3 - 2018.12.23 at 19h 10m 22s.xml">
+      <configuration name="HibernateTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HibernateTest_test2 - 2018.12.10 at 21h 17m 43s.xml">
-      <configuration name="HibernateTest.test2" configurationId="JUnit" />
+    <history-entry file="HibernateTest_test3 - 2018.12.23 at 19h 11m 51s.xml">
+      <configuration name="HibernateTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HibernateTest_test3 - 2018.12.23 at 19h 19m 04s.xml">
+      <configuration name="HibernateTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HiberbateTest1_Test3 - 2018.12.23 at 19h 23m 47s.xml">
+      <configuration name="HiberbateTest1.Test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HiberbateTest1_Test3 - 2018.12.23 at 19h 24m 11s.xml">
+      <configuration name="HiberbateTest1.Test3" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8852000" />
+    <option name="totallyTimeSpent" value="13907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25906184" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24840085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -359,7 +421,7 @@
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897863" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0701559" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09465479" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,6 +444,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.117803834" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.29957357" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,16 +481,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/OJ/test/HiberbateTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/OJ/domain/solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
+        <state relative-caret-position="900">
           <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -439,27 +495,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/OJ/test/HibernateTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/OJ/domain/solution.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190">
-          <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="714">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="850">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/OJ/domain/solution.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/OJ/test/HiberbateTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/OJ/test/HibernateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
