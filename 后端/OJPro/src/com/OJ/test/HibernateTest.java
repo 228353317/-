@@ -30,17 +30,7 @@ public class HibernateTest {
     @Test
     public void test_0j(){
         Session session = HibernateUtil.openSession();
-        solution solu = session.get(solution.class, 1L);
-
-//        数组转json格式
-//        try {
-//            JSONObject jsonObject = JSONObject.fromObject(model);
-//            jsonStr = jsonObject.toString();
-//            System.out.println(jsonStr);
-//        } catch (Exception e) {
-//            System.out.println("数组转json失败");
-//        }
-
+        solution solu = session.get(solution.class, 2L);
         System.out.println(solu);
         session.close();
     }
@@ -59,46 +49,46 @@ public class HibernateTest {
         Transaction transaction = session.beginTransaction();
         //获取一条数据
         solution solu = session.get(solution.class, 2L);
-        solu.setPid(9);
-        solu.setSid(9);
-        solu.setTIid(9);
-        solu.setScore(65);
+        solu.setPid(2);
+        solu.setSid(2);
+        solu.setTIid(2);
+        solu.setScore(33);
         Date date = new Date();
         solu.setSubmitDate(new Timestamp(date.getTime()));
-        solu.setMemory(2900);
-        solu.setTime(1963);
-        solu.setCodeLength(99);
-        solu.setULid(9);
-        solu.setJRid(9);
-        solu.setError("error_text");
+        solu.setMemory(4500);
+        solu.setTime(1999);
+        solu.setCodeLength(66);
+        solu.setULid(3);
+        solu.setJRid(8);
+        solu.setError("error_info");
         session.update(solu);
         //提交事务
         transaction.commit();
         //关闭资源
         session.close();
     }
-//    @Test
-//    public void test3(){
-//        Session session = HibernateUtil.openSession();
-//        //开启事务
-//        Transaction transaction = session.beginTransaction();
-//
-//        //删除记录的2种方法:
-//
-//        //(1)创建对象然后删除(不支持级联删除)
-//        //Customer customer = new Customer();
-//        //customer.setCust_id(1L);
-//        //session.delete(customer);
-//
-//        //(2)查询对象然后删除(支持级联删除)
-//        Customer customer = session.get(Customer.class, 2L);
-//        session.delete(customer);
-//
-//        //提交事务
-//        transaction.commit();
-//        //关闭资源
-//        session.close();
-//    }
+    @Test
+    public void test3(){
+        Session session = HibernateUtil.openSession();
+        //开启事务
+        Transaction transaction = session.beginTransaction();
+
+        //删除记录的2种方法:
+
+        //(1)创建对象然后删除(不支持级联删除)
+        //Customer customer = new Customer();
+        //customer.setCust_id(1L);
+        //session.delete(customer);
+
+        //(2)查询对象然后删除(支持级联删除)
+        solution solu = session.get(solution.class, 4L);
+        session.delete(solu);
+
+        //提交事务
+        transaction.commit();
+        //关闭资源
+        session.close();
+    }
 //
 //    @Test
 //    public void test4(){
